@@ -55,6 +55,7 @@ Put following lines in cordova.plugins.JinsMemePlugin.startDataReport() callback
 
 Put following lines in somewhere.
 適切な場所に以下のコードを記載してください。
+
 ```
 // Lateral swings
 document.addEventListener('jmoplib_swing_lat', function(e) {
@@ -77,13 +78,14 @@ document.addEventListener('jmoplib_eyemove_long', function(e) {
     //console.log("lng directoin:" + e.detail.direction + " times:" + e.detail.count);
 });
 ```
+
 These events have CustomEvent interface ('e').
 これらのイベントはカスタムイベントインターフェース('e')を有します。
 
--- e.detail.direction: Which direction did it occur at first time? (right/up == 1, left/down == -1) 
--- e.detail.count: How many times did it occur?
--- e.detail.direction: 最初にどちらに動かしたか？(右上 == 1, 左下 == -1)
--- e.detail.count: 何回連続で動かしたか？
+- e.detail.direction: Which direction did it occur at first time? (right/up == 1, left/down == -1) 
+- e.detail.count: How many times did it occur?
+- e.detail.direction: 最初にどちらに動かしたか？(右上 == 1, 左下 == -1)
+- e.detail.count: 何回連続で動かしたか？
 
 ### Tilt calculation
 - Put following lines in cordova.plugins.JinsMemePlugin.startDataReport() callback.
