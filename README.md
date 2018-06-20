@@ -1,7 +1,7 @@
-#JINS MEME Controller Library
+# JINS MEME Controller Library
 ====
 
-##Overview
+## Overview
 
 - Event detection of the first orientation and the number of consecutive times when the neck is swung right and left or up and down in short intervals
 - Event detection of the first orientation and the number of consecutive times when the line of sight is moved right and left or up and down in short intervals
