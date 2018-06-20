@@ -1,5 +1,5 @@
-#
-components/
-css/
-lib/
+res/
+www/components/
+www/css/
+www/lib/
 config.xml
