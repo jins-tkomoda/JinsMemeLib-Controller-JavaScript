@@ -112,7 +112,6 @@
     
     // 計測開始
     function startDataReport() {
-        cordova.plugins.backgroundMode.enable();
         cordova.plugins.JinsMemePlugin.startDataReport(function(data) {
             document.getElementById('modal').hide();
 
