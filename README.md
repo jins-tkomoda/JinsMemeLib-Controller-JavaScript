@@ -46,8 +46,8 @@ Put following lines in cordova.plugins.JinsMemePlugin.startDataReport() callback
 以下のメソッドを cordova.plugins.JinsMemePlugin.startDataReport() callback 内に記述してください。
 
 ```
- jmoplib.getSequentialSwing(data); 
- jmoplib.getSequentialEyeMove(data);
+ jmctrllib.getSequentialSwing(data); 
+ jmctrllib.getSequentialEyeMove(data);
 ```
 
 - Listen the controll events
@@ -58,22 +58,22 @@ Put following lines in somewhere.
 
 ```
 // Lateral swings
-document.addEventListener('jmoplib_swing_lat', function(e) {
+document.addEventListener('jmctrllib_swing_lat', function(e) {
     // do something
     //console.log("lat directoin:" + e.detail.direction + " times:" + e.detail.count);
 });
 // Longitudinal swings
-document.addEventListener('jmoplib_swing_long', function(e) {
+document.addEventListener('jmctrllib_swing_long', function(e) {
     // do something
     //console.log("lng directoin:" + e.detail.direction + " times:" + e.detail.count);
 });
 // Lateral eye movements
-document.addEventListener('jmoplib_eyemove_lat', function(e) {
+document.addEventListener('jmctrllib_eyemove_lat', function(e) {
     // do something
     //console.log("lat directoin:" + e.detail.direction + " times:" + e.detail.count);
 });
 // Lateral eye movements
-document.addEventListener('jmoplib_eyemove_long', function(e) {
+document.addEventListener('jmctrllib_eyemove_long', function(e) {
     // do something
     //console.log("lng directoin:" + e.detail.direction + " times:" + e.detail.count);
 });
@@ -92,7 +92,7 @@ These events have CustomEvent interface ('e').
 - 以下のメソッドを cordova.plugins.JinsMemePlugin.startDataReport() callback 内に記述してください。
 
  ```
- var tilt = jmoplib.calcTilt(data);
+ var tilt = jmctrllib.calcTilt(data);
  ```
 
 ## Licence
